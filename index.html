@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10251f">
+  <title>Electric Vehicles in India: A Clear, Evidence-Based Guide | EV Knowledge Hub</title>
+  <meta name="description" content="A clear guide to electric vehicles in India: how EVs work, vehicle types, charging, benefits, limitations, and official sources for further reading.">
+  <meta name="author" content="EV Knowledge Hub">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Electric Vehicles in India: A Clear, Evidence-Based Guide">
+  <meta property="og:description" content="Understand electric vehicles, charging, benefits, limitations, and India's EV ecosystem.">
+  <!-- Replace this canonical URL with your final public URL after publishing. -->
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Electric Vehicles in India: A Clear, Evidence-Based Guide",
+    "description": "An original introductory guide to electric vehicles, how they work, charging, benefits, limitations, and India's EV ecosystem.",
+    "author": {
+      "@type": "Organization",
+      "name": "EV Knowledge Hub"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "EV Knowledge Hub"
+    },
+    "datePublished": "2026-10-14",
+    "dateModified": "2026-10-14",
+    "inLanguage": "en-IN",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --ink: #172b25;
+      --muted: #5b6c65;
+      --paper: #f6f8f4;
+      --white: #ffffff;
+      --green: #176b4d;
+      --green-dark: #10251f;
+      --mint: #d9f3e4;
+      --line: #dce5dd;
+      --gold: #f1c66d;
+      --radius: 22px;
+      --shadow: 0 14px 38px rgba(16,37,31,.08);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--paper); color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.68;
+    }
+    a { color: var(--green); text-underline-offset: 3px; }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    .skip { position: absolute; left: -9999px; top: 0; }
+    .skip:focus { left: 1rem; top: 1rem; z-index: 10; background: white; padding: .75rem; }
+    .wrap { width: min(1080px, calc(100% - 36px)); margin: 0 auto; }
+    .topbar { background: var(--green-dark); color: #eaf7ef; font-size: .9rem; }
+    .topbar .wrap { display:flex; justify-content:space-between; align-items:center; gap:1rem; padding:.7rem 0; }
+    .brand { display:flex; align-items:center; gap:.65rem; font-weight:800; letter-spacing:-.02em; }
+    .brand-mark { display:grid; place-items:center; width:34px; height:34px; border-radius:11px; background:var(--mint); color:var(--green-dark); font-weight:900; }
+    nav { display:flex; gap:1rem; flex-wrap:wrap; }
+    nav a { color:#eaf7ef; text-decoration:none; font-size:.88rem; }
+    .hero { background:var(--green-dark); color:white; padding: clamp(3rem, 7vw, 6rem) 0 4.5rem; overflow:hidden; }
+    .hero-grid { display:grid; grid-template-columns: 1.2fr .8fr; gap:3rem; align-items:center; }
+    .eyebrow { color:#a8e4c1; font-weight:800; text-transform:uppercase; letter-spacing:.12em; font-size:.78rem; }
+    h1 { font-size:clamp(2.4rem, 6vw, 4.6rem); line-height:1.06; letter-spacing:-.055em; margin:.9rem 0 1.2rem; max-width:760px; }
+    .hero p { color:#d3e2d9; font-size:1.1rem; max-width:690px; }
+    .hero-links { display:flex; gap:.8rem; flex-wrap:wrap; margin-top:1.6rem; }
+    .btn { display:inline-block; padding:.78rem 1.05rem; border-radius:999px; font-weight:750; text-decoration:none; }
+    .btn-primary { background:var(--mint); color:var(--green-dark); }
+    .btn-ghost { border:1px solid #638075; color:white; }
+    .hero-art { min-height:270px; position:relative; display:grid; place-items:center; }
+    .orb { width:min(300px, 70vw); aspect-ratio:1; border-radius:50%; background:radial-gradient(circle at 35% 30%, #e4f7e9, #8fd3ab 38%, #247858 70%, #174a38); box-shadow:0 25px 80px #071812; position:relative; }
+    .orb:before { content:""; position:absolute; width:72%; height:35%; border:3px solid rgba(255,255,255,.55); border-radius:50%; left:14%; top:33%; transform:rotate(-25deg); }
+    .orb:after { content:"⚡"; position:absolute; inset:0; display:grid; place-items:center; font-size:5rem; color:#123e2e; text-shadow:0 2px 0 rgba(255,255,255,.3); }
+    .floating-note { position:absolute; right:0; bottom:1.2rem; padding:.8rem 1rem; background:white; color:var(--ink); border-radius:14px; box-shadow:var(--shadow); font-size:.9rem; font-weight:750; }
+    main { padding:2.5rem 0 4rem; }
+    .intro-grid { display:grid; grid-template-columns: 1.4fr .6fr; gap:1.2rem; margin-top:-1rem; position:relative; }
+    .card { background:var(--white); border:1px solid var(--line); border-radius:var(--radius); padding:clamp(1.2rem, 3vw, 2rem); box-shadow:var(--shadow); }
+    .quick { border-top:5px solid var(--green); }
+    .kicker { color:var(--green); text-transform:uppercase; font-size:.75rem; font-weight:850; letter-spacing:.1em; }
+    h2 { font-size:clamp(1.65rem, 3vw, 2.35rem); line-height:1.2; letter-spacing:-.035em; margin:.35rem 0 1rem; }
+    h3 { font-size:1.15rem; line-height:1.35; margin:1.25rem 0 .35rem; }
+    p { margin:.6rem 0 1rem; }
+    .small { color:var(--muted); font-size:.92rem; }
+    .contents { align-self:start; }
+    .contents ul { padding-left:1.1rem; margin:.5rem 0 0; }
+    .contents li { margin:.35rem 0; }
+    .section { margin-top:2rem; }
+    .section-head { max-width:760px; margin-bottom:1.2rem; }
+    .three { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+    .iconbox { width:42px; height:42px; border-radius:13px; display:grid; place-items:center; background:var(--mint); font-size:1.3rem; }
+    .tag { display:inline-block; background:#eef6ef; border:1px solid #d9e9dc; border-radius:999px; padding:.2rem .55rem; font-size:.78rem; font-weight:750; color:#24563e; }
+    .steps { display:grid; grid-template-columns:repeat(4,1fr); gap:.8rem; counter-reset:step; }
+    .step { background:white; border:1px solid var(--line); border-radius:18px; padding:1.1rem; }
+    .step:before { counter-increment:step; content:counter(step, decimal-leading-zero); display:block; color:var(--green); font-weight:900; font-size:1.1rem; margin-bottom:.6rem; }
+    .table-wrap { overflow-x:auto; border:1px solid var(--line); border-radius:16px; background:white; }
+    table { width:100%; border-collapse:collapse; min-width:580px; }
+    th,td { text-align:left; vertical-align:top; padding:1rem; border-bottom:1px solid var(--line); }
+    th { background:#edf5ef; font-size:.88rem; }
+    tr:last-child td { border-bottom:0; }
+    .balanced { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+    .balanced .card h3 { margin-top:.2rem; }
+    .good { border-top:4px solid #25835b; }
+    .watch { border-top:4px solid #d39b32; }
+    .faq details { background:white; border:1px solid var(--line); border-radius:14px; padding:1rem 1.2rem; margin:.65rem 0; }
+    .faq summary { cursor:pointer; font-weight:800; }
+    .faq details p { margin-bottom:.1rem; }
+    .sources li { margin:.7rem 0; }
+    .note { background:#edf5ef; border-left:4px solid var(--green); padding:1rem 1.2rem; border-radius:0 14px 14px 0; }
+    footer { background:var(--green-dark); color:#d3e2d9; padding:2rem 0; font-size:.9rem; }
+    footer a { color:#b4e9ca; }
+    .footer-row { display:flex; justify-content:space-between; gap:1.5rem; flex-wrap:wrap; }
+    @media (max-width:760px) {
+      .hero-grid,.intro-grid,.balanced { grid-template-columns:1fr; }
+      .hero-art { min-height:220px; }
+      .floating-note { right:4%; }
+      .three { grid-template-columns:1fr; }
+      .steps { grid-template-columns:1fr 1fr; }
+      .topbar .wrap { align-items:flex-start; flex-direction:column; }
+    }
+    @media (max-width:430px) {
+      .steps { grid-template-columns:1fr; }
+      nav { gap:.7rem; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="topbar">
+    <div class="wrap">
+      <div class="brand"><span class="brand-mark">EV</span> EV Knowledge Hub</div>
+      <nav aria-label="Main navigation">
+        <a href="#basics">Basics</a>
+        <a href="#types">Types</a>
+        <a href="#india">India</a>
+        <a href="#faq">FAQs</a>
+        <a href="#sources">Sources</a>
+      </nav>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">A practical, evidence-based guide</div>
+        <h1>Electric vehicles, explained clearly.</h1>
+        <p>Understand how electric vehicles work, how charging fits into daily life, and what to consider when comparing an EV with a petrol or diesel vehicle in India.</p>
+        <div class="hero-links">
+          <a class="btn btn-primary" href="#quick-answer">Start with the quick answer ↓</a>
+          <a class="btn btn-ghost" href="#sources">Explore official sources</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb"></div>
+        <div class="floating-note">Electric mobility · India</div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <div class="intro-grid">
+      <article class="card quick" id="quick-answer">
+        <div class="kicker">Quick answer</div>
+        <h2>What is an electric vehicle?</h2>
+        <p><strong>An electric vehicle (EV) is a vehicle that uses an electric motor for propulsion.</strong> A battery-electric vehicle stores electricity in a rechargeable battery and uses that electricity to power its motor instead of burning petrol or diesel in an internal-combustion engine.</p>
+        <p>Not every vehicle marketed as an EV works the same way: battery-electric vehicles, hybrid electric vehicles, and plug-in hybrids have different powertrains and charging needs.</p>
+        <p class="small">This guide explains the main differences and points to official sources for India-specific policy and charging information.</p>
+      </article>
+      <aside class="card contents">
+        <div class="kicker">On this page</div>
+        <ul>
+          <li><a href="#basics">How an EV works</a></li>
+          <li><a href="#types">Main EV types</a></li>
+          <li><a href="#charging">Charging explained</a></li>
+          <li><a href="#india">EVs in India</a></li>
+          <li><a href="#tradeoffs">Benefits and limitations</a></li>
+          <li><a href="#faq">Frequently asked questions</a></li>
+          <li><a href="#sources">Sources and methodology</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <section class="section" id="basics">
+      <div class="section-head">
+        <div class="kicker">01 · The basics</div>
+        <h2>How does a battery-electric vehicle work?</h2>
+        <p>A battery-electric vehicle (BEV) converts stored electrical energy into motion. The exact components vary by model, but the basic energy path is similar.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Store energy</h3><p>A rechargeable traction battery stores electrical energy for driving.</p></div>
+        <div class="step"><h3>Control power</h3><p>Power electronics regulate the electricity delivered to the motor.</p></div>
+        <div class="step"><h3>Move the vehicle</h3><p>The electric motor converts electrical energy into mechanical motion.</p></div>
+        <div class="step"><h3>Recover some energy</h3><p>Regenerative braking can convert some motion energy back into electricity during deceleration.</p></div>
+      </div>
+      <p class="note"><strong>Key distinction:</strong> charging replenishes the battery with electricity. Regenerative braking can recover some energy, but it does not eliminate the need to charge the vehicle.</p>
+    </section>
+
+    <section class="section" id="types">
+      <div class="section-head">
+        <div class="kicker">02 · Vehicle types</div>
+        <h2>Three common electric powertrain categories</h2>
+        <p>The term “electric vehicle” can describe more than one design. Checking the powertrain helps explain how the vehicle is fuelled and charged.</p>
+      </div>
+      <div class="three">
+        <article class="card">
+          <div class="iconbox" aria-hidden="true">🔋</div>
+          <h3>Battery-electric vehicle (BEV)</h3>
+          <p>Uses a battery and electric motor for propulsion. The battery is charged from an external electricity source; the vehicle has no petrol or diesel engine for driving.</p>
+          <span class="tag">Plug-in charging</span>
+        </article>
+        <article class="card">
+          <div class="iconbox" aria-hidden="true">🔌</div>
+          <h3>Plug-in hybrid (PHEV)</h3>
+          <p>Combines an electric motor and rechargeable battery with an internal-combustion engine. It can be plugged in, and the engine can provide additional driving capability.</p>
+          <span class="tag">Electric + fuel</span>
+        </article>
+        <article class="card">
+          <div class="iconbox" aria-hidden="true">⚙️</div>
+          <h3>Hybrid electric vehicle (HEV)</h3>
+          <p>Combines an electric motor with an internal-combustion engine. A conventional hybrid generally does not plug in; its battery is charged through the vehicle's systems, including regenerative braking.</p>
+          <span class="tag">Usually no plug</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="charging">
+      <div class="section-head">
+        <div class="kicker">03 · Charging</div>
+        <h2>How EV charging works</h2>
+        <p>Charging time depends on the vehicle, battery state, charger power, temperature, and charging limits. A higher-power charger does not guarantee that every vehicle will charge at that power.</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Charging option</th><th>Typical use</th><th>What to check</th></tr></thead>
+          <tbody>
+            <tr><td>Home or workplace AC charging</td><td>Convenient charging while parked for several hours.</td><td>Electrical installation, connector compatibility, vehicle limits, and permission where required.</td></tr>
+            <tr><td>Public AC charging</td><td>Charging at destinations where the vehicle may stay for a while.</td><td>Connector type, access, pricing, and parking conditions.</td></tr>
+            <tr><td>Public DC fast charging</td><td>Faster charging during suitable stops, especially on journeys.</td><td>Vehicle's DC charging capability, connector, charger output, battery temperature, and current state of charge.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small">There is no single charging time that applies to every EV. Use the manufacturer's figures for the exact model and charger, and consult official charging guidance for installation and safety requirements.</p>
+    </section>
+
+    <section class="section" id="india">
+      <div class="section-head">
+        <div class="kicker">04 · India context</div>
+        <h2>EVs in India: policy, infrastructure, and practical questions</h2>
+        <p>India's electric-mobility ecosystem includes vehicle manufacturers, battery and component suppliers, charging operators, electricity distribution companies, and public policy. The rules and incentives can change, so current claims should be checked against official sources.</p>
+      </div>
+      <div class="balanced">
+        <article class="card">
+          <div class="iconbox" aria-hidden="true">🏛️</div>
+          <h3>Government programmes</h3>
+          <p>The Government of India's Ministry of Heavy Industries publishes information about the PM E-DRIVE scheme, including its objectives, eligible vehicle categories, and official notifications. Eligibility and scheme timelines depend on the latest applicable rules.</p>
+          <p><a href="https://pmedrive.heavyindustries.gov.in/" target="_blank" rel="noopener noreferrer">Read the official PM E-DRIVE portal ↗</a></p>
+        </article>
+        <article class="card">
+          <div class="iconbox" aria-hidden="true">⚡</div>
+          <h3>Charging infrastructure</h3>
+          <p>Charging availability is a practical part of EV ownership. India's Ministry of Power publishes charging-infrastructure guidelines and related information. Drivers should also check live charger status, connector compatibility, and pricing before a trip.</p>
+          <p><a href="https://powermin.gov.in/" target="_blank" rel="noopener noreferrer">Visit the Ministry of Power ↗</a></p>
+        </article>
+      </div>
+      <p class="note"><strong>Before relying on an incentive:</strong> confirm the current scheme period, vehicle category, registration conditions, state-level rules, and eligibility with the official authority or authorised dealer. This page does not determine eligibility for any individual buyer.</p>
+    </section>
+
+    <section class="section" id="tradeoffs">
+      <div class="section-head">
+        <div class="kicker">05 · Balanced comparison</div>
+        <h2>Benefits and limitations of electric vehicles</h2>
+        <p>The real-world outcome depends on the vehicle, electricity supply, driving pattern, charging access, purchase price, and how long the vehicle is used.</p>
+      </div>
+      <div class="balanced">
+        <article class="card good">
+          <h3>Potential benefits</h3>
+          <ul>
+            <li>No tailpipe exhaust emissions while a BEV is driving.</li>
+            <li>Electric motors can convert energy to motion efficiently.</li>
+            <li>Charging at home or work may be convenient for people with suitable parking and electrical access.</li>
+            <li>Regenerative braking can recover some energy during deceleration.</li>
+            <li>Routine maintenance needs may differ from those of a petrol or diesel vehicle.</li>
+          </ul>
+        </article>
+        <article class="card watch">
+          <h3>Important limitations</h3>
+          <ul>
+            <li>Purchase price and total cost vary by model, financing, incentives, and use.</li>
+            <li>Long trips require planning around range, charger availability, and charging time.</li>
+            <li>Battery performance and charging speed can be affected by temperature and battery state.</li>
+            <li>Battery production, electricity generation, and end-of-life handling affect overall environmental impact.</li>
+            <li>Charging access may be difficult for some people without dedicated parking.</li>
+          </ul>
+        </article>
+      </div>
+      <p class="small">Avoid treating any one benefit or limitation as universal. Compare the same vehicle category and use case, and use transparent assumptions when calculating costs or emissions.</p>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="section-head">
+        <div class="kicker">06 · Frequently asked questions</div>
+        <h2>Common questions about electric vehicles</h2>
+      </div>
+      <details>
+        <summary>What is the difference between a BEV and a hybrid?</summary>
+        <p>A battery-electric vehicle uses a rechargeable battery and electric motor without an internal-combustion engine for propulsion. A hybrid combines an electric motor with an internal-combustion engine. A plug-in hybrid can charge its battery from an external power source, while a conventional hybrid generally cannot.</p>
+      </details>
+      <details>
+        <summary>Can an electric vehicle be charged at home?</summary>
+        <p>Many EVs can be charged at home if the vehicle supports the available charging method and the electrical installation is suitable. Owners should follow the vehicle manufacturer's instructions and use appropriately installed equipment.</p>
+      </details>
+      <details>
+        <summary>How long does it take to charge an EV?</summary>
+        <p>There is no universal charging time. It depends on battery capacity, starting charge, charger output, the vehicle's maximum charging rate, temperature, and charging behaviour near a full battery. Check the manufacturer's figures for the exact model.</p>
+      </details>
+      <details>
+        <summary>Are electric vehicles always better for the environment?</summary>
+        <p>Not in every situation under every measure. Battery-electric vehicles have no tailpipe exhaust while driving, but a full environmental comparison also considers electricity generation, battery and vehicle production, use, and end-of-life handling.</p>
+      </details>
+      <details>
+        <summary>Are government incentives available for every EV in India?</summary>
+        <p>No single answer applies to every vehicle. Eligibility can depend on the current central or state programme, vehicle category, registration date, and other conditions. Consult the relevant official scheme portal and current notifications.</p>
+      </details>
+      <details>
+        <summary>What should someone check before buying an EV?</summary>
+        <p>Compare the total ownership cost, real-world range for your driving pattern, home and public charging access, warranty terms, service availability, battery coverage, and the current eligibility rules for any claimed incentive.</p>
+      </details>
+    </section>
+
+    <section class="section" id="sources">
+      <div class="section-head">
+        <div class="kicker">07 · Evidence and transparency</div>
+        <h2>Sources and further reading</h2>
+        <p>Use primary sources for current policy and infrastructure claims. The links below are official starting points; verify the relevant document and its date before relying on a specific rule or number.</p>
+      </div>
+      <div class="card">
+        <ol class="sources">
+          <li><a href="https://pmedrive.heavyindustries.gov.in/" target="_blank" rel="noopener noreferrer">PM E-DRIVE — Ministry of Heavy Industries, Government of India</a><br><span class="small">Official scheme information, notifications, and programme updates.</span></li>
+          <li><a href="https://heavyindustries.gov.in/en/pm-e-drive" target="_blank" rel="noopener noreferrer">Ministry of Heavy Industries — PM E-DRIVE overview</a><br><span class="small">Government overview of the scheme.</span></li>
+          <li><a href="https://powermin.gov.in/" target="_blank" rel="noopener noreferrer">Ministry of Power, Government of India</a><br><span class="small">Official ministry website; look for current EV charging-infrastructure guidelines.</span></li>
+          <li><a href="https://e-amrit.niti.gov.in/standards-and-specifications" target="_blank" rel="noopener noreferrer">e-AMRIT — Charging standards and specifications</a><br><span class="small">Information on charging standards and compatible equipment; check for newer guidance.</span></li>
+          <li><a href="https://www.beeindia.gov.in/" target="_blank" rel="noopener noreferrer">Bureau of Energy Efficiency, Government of India</a><br><span class="small">Energy-efficiency information and related government resources.</span></li>
+        </ol>
+      </div>
+      <div class="note" style="margin-top:1rem">
+        <strong>Methodology:</strong> This page is an introductory educational guide, not a buying recommendation or legal interpretation. Policy details and charger availability can change. For time-sensitive claims, consult the latest official notification and record the date checked. Content should be reviewed before competition submission.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <div><strong>EV Knowledge Hub</strong><br>Practice project for PS 04: Get Cited</div>
+      <div>Last reviewed: 14 October 2026<br><a href="#main">Back to top ↑</a></div>
+    </div>
+  </footer>
+</body>
+</html>
